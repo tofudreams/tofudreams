@@ -119,6 +119,10 @@ footer {
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .contact {
   padding: 14px 30px;
   background: #FCFAFC;
