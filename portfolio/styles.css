@@ -8,7 +8,7 @@ body {
   padding: 50px 30px;
   margin: 0;
   font-family: Camphor, Open Sans, Segoe UI, sans-serif;
-  color: #1c00fd;
+  color: #49546b;
   background-color: #fcf8ff;
   display: flex;
   flex-direction: row;
@@ -26,28 +26,44 @@ body {
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 40px;
-  color: #49546B;
+  font-size: 20px;
+  font-weight: normal;
+  color: #49546b;
   margin: 0;
   padding: 0;
   z-index: 40000;
   pointer-events: auto;
   text-align: center;
-  margin-bottom: 1.2em;
+  margin-bottom: 2em;
+}
+
+.item-category {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 740px) {
+  .item-category {
+    place-items: center;
+  }
+}
+
+.category-title {
+  padding-bottom: 2em;
+  font-weight: 700;
 }
 
 .items-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
-  grid-gap: 45px;
-  justify-content: center;
-  padding-bottom: 40px;
+  grid-gap: 70px;
+  padding-bottom: 80px;
 }
 
 .grid-item {
-  background: #FFFFFF;
-  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.03), 0 13px 27px -5px rgba(50, 50, 93, 0.25);
+  background: #ffffff;
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.03),
+    0 13px 27px -5px rgba(50, 50, 93, 0.25);
   border-radius: 6px;
   width: 300px;
   min-height: 370px;
@@ -70,7 +86,7 @@ h1 {
   height: 100%;
   flex-direction: column;
   padding: 10px 20px;
-  color: #65728F;
+  color: #65728f;
   flex-grow: 1;
 }
 .grid-item .project-info span {
@@ -94,8 +110,8 @@ h1 {
 .grid-item .project-info .category {
   padding: 8px 14px;
   border-radius: 20px;
-  background: #D6DFFE;
-  color: #6772E5;
+  background: #d6dffe;
+  color: #6772e5;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.5px;
@@ -109,8 +125,8 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border-radius: 100%;
   overflow: hidden;
   top: 5px;
@@ -137,4 +153,8 @@ h1 {
 
 .lodgify {
   background-image: url("https://raw.githubusercontent.com/tofudreams/tofudreams.github.io/master/portfolio/assets/lodgifyw.png");
+}
+
+.email-me {
+  font-size: 14px;
 }
