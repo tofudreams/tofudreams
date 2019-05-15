@@ -33,7 +33,7 @@ h1 {
   padding: 0;
   z-index: 40000;
   pointer-events: auto;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
   grid-column: 1/4;
 }
 
