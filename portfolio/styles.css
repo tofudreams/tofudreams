@@ -27,17 +27,20 @@ body {
 
 h1 {
   font-weight: 700;
+  font-size: 40px;
   margin: 0;
   padding: 0;
   z-index: 40000;
   pointer-events: auto;
-  margin-bottom: 30px;
+  margin-bottom: 1em;
+  text-align: center;
 }
 
 .items-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
-  grid-gap: 30px;
+  grid-gap: 45px;
+  justify-content: center;
 }
 
 .grid-item {
@@ -100,10 +103,14 @@ h1 {
 }
 .grid-item .logo {
   position: absolute;
-  background: red;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 40px;
   width: 40px;
   border-radius: 100%;
+  overflow: hidden;
   top: 5px;
   right: 5px;
 }
@@ -112,4 +119,20 @@ h1 {
   height: 200px;
   margin-bottom: 8px;
   object-fit: cover;
+}
+
+.codepen {
+  background-image: url("https://raw.githubusercontent.com/tofudreams/tofudreams.github.io/master/portfolio/assets/codepen.png");
+}
+
+.dribbble {
+  background-image: url("https://raw.githubusercontent.com/tofudreams/tofudreams.github.io/master/portfolio/assets/dribbble.png");
+}
+
+.medium {
+  background-image: url("https://raw.githubusercontent.com/tofudreams/tofudreams.github.io/master/portfolio/assets/medium.png");
+}
+
+.lodgify {
+  background-image: url("https://raw.githubusercontent.com/tofudreams/tofudreams.github.io/master/portfolio/assets/lodgifyw.png");
 }
